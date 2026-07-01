@@ -1,0 +1,18 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <form method="POST">
+      {% csrf_token %}
+      <input type="text" name="username" placeholder="username" />
+      <input type="password" name="password" placeholder="password" />
+      <button type="submit">SignUp</button>
+
+      <p>Already have an account? <a href="/practice/login/">Login</a></p>
+    </form>
+  </body>
+</html>
