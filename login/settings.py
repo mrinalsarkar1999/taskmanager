@@ -11,8 +11,13 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 SECRET_KEY = 'django-insecure-cgzd+r3w7x9lhnyy(3ar5^3vwcq2#r4b%fyo$s%o@1lm4+3#ud'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
+DEBUG = False
 
+ALLOWED_HOSTS = [
+    "16.112.223.156",
+    "localhost",
+    "127.0.0.1",
+]
 
 
 # Application definition
@@ -50,6 +55,7 @@ CORS_ALLOWED_ORIGINS = [
 
 CSRF_TRUSTED_ORIGINS = [
     "http://localhost:5173",
+    "http://16.112.223.156/",
 ]
 
 # Allows cookies to be sent from cross origin sites to django
